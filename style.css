@@ -1,0 +1,477 @@
+@font-face {
+    font-family: Havelock;
+    src: url(./Assets/Font/XO\,\ Pretty\ -\ Havelock\ Titling\ Medium.otf);
+}
+@font-face {
+    font-family: DancingScript;
+    src: url(./Assets/Font/DancingScript-VariableFont_wght.ttf);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Havelock;
+}
+
+html,Body{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    background-color: #ededed;
+    color: #141414;
+    transition: all 0.2s ease;
+    
+}
+
+#main{
+    background-color: #ededed;
+    min-height: 700vh;
+
+}
+
+#full-scr-nav{
+    color: #ededed;
+    position: absolute;
+    height: 100%;
+    background-color: #141414;
+    width: 100%;
+    top: -100%;
+    padding: 15vw 12vw;
+    transition: all ease 0.7s;
+    z-index: 900;
+}
+
+#full-scr-nav h1{
+    font-size: 10vw;
+    color: #ededed;
+}
+#nav{
+    margin-top: 1vh;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    padding: 30px ;
+    z-index: 999;
+    position: absolute;
+    transition: all 0.6s ease;
+}
+
+#nav h1{
+    text-transform: uppercase;
+    font-size: 1.5vw;
+}
+
+#nav-part-2{
+    gap: 2vw;
+    display: flex;
+    align-items: center;
+}
+#nav-part-2 h2{
+    font-size: 1.5vw;
+}
+
+#nav-part-2 i{
+    font-size: 1.5vw;
+}
+
+#page1{
+    position: relative;
+    min-height: 100vh;
+    width: 100vw;
+}
+
+#page1 h1{
+    left: 5vw;
+    position: absolute;
+    top: 17vw;
+    font-size: 13vw;
+    letter-spacing: 2vh;
+}
+#page1 h2{
+    margin-top: 2vw;
+    left: 22vw;
+    position: absolute;
+    top: 30vw;
+    width: 35vw;
+    font-size: 2.5vw;
+    line-height: .9;
+    opacity: .8;
+}
+
+#page1 h3{
+    margin-top: 2vw;
+    right: 20vw;
+    position: absolute;
+    top: 45vh;
+    width: 12vw;
+    font-size: 1vw;
+    line-height: 1;
+}
+#img{
+    top: 20vh;
+    position: relative;
+    width: 100vw;
+    height: 90vh;
+    background-color: #141414;
+    border-radius: 5px;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(.8);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .3);
+}
+#img>img{
+    position: absolute;
+    left: 50%;
+    width: 70vw;
+    top: 40%;
+    transform: translate(-50%, -50%) scale(.9);
+}
+
+#page2{
+    position: relative;
+    min-height: 100vh;
+}
+#page4 h2{
+    font-size: 1vw;
+    left: 5vw;
+    padding-bottom: 1vw;
+}
+#line{
+    height: 3px;
+    width: 0;
+    background-color: #141414;
+}
+#text{
+    
+    transform: translate(-50%, -50%);
+    top: 100%;
+    position: absolute;
+    left: 50%;
+    justify-content: space-between;
+    height:50vh ;
+    padding-top: 5vw;
+    width: 90vw;
+    transform-origin: 100% 100%;
+}
+
+#page2 h1{
+    text-align: center;
+    transform: rotateX(270deg);
+    opacity: 0;
+    font-size: 4vw;
+}
+
+#page2 h1 span{
+    font-family: DancingScript;
+    letter-spacing: .3vw;
+    width: 50vw;
+    text-align: center;
+    font-weight: 400;
+}
+
+#page3{
+    width: 100vw;
+    height: 40vh;
+}
+
+#page4{
+    padding:6vh 8vh;
+    position: relative;
+    width: 100vw;
+    height: 50vh;
+}
+
+#page4 h1{
+    line-height: .9;
+    width: 80vw;
+    font-size: 7.3vw;
+    transition: all 0.3s ease;
+}
+
+#page5{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+#page5 #page5-elems{
+    display: flex;
+    justify-content: space-between;
+    height: 25vh;
+    width: 100vw;
+    align-items: center;
+}
+
+#page5-elems h1{
+    width: 70vw;
+    height: 25vh;
+    font-size: 4vw;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border: .3vh solid black;
+}
+
+#page5-elems h2{
+    padding: 0 1vw;
+    font-size: 1.8vw;
+    width: 30vw;
+    height: 25vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-right: .3vh solid black;
+    border-bottom: .3vh solid black;
+    border-top: .3vh solid black;
+}
+
+#page5-content{
+    color: #ededed;
+    background-image: url(/Assets/gif/shinning\ stars.gif);
+    padding-top: 8vw;
+    height: 70vh;
+    width: 100vw;
+    position: relative;
+    align-items: center;
+    justify-content: flex-start;
+    display: flex;
+    flex-direction: column;
+}
+
+#page5-content img{
+    transform-origin: center center;
+}
+
+#page5-content h1{
+    font-size: 3vw;
+    font-weight: 800;
+    width: 70vw;
+    text-align: center;
+    line-height: .7;
+    margin-bottom: 3.5vw;
+}
+#page5-content h1 span{
+    font-family: Dancing Script;
+    font-size: 5.5vw;
+}
+
+#page5-content h4{
+    padding-top: 2vw;
+    font-size: 1vw;
+    margin-bottom: 10vw;
+}
+
+#page6{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+#page6 h1{
+    font-weight: 550;
+    font-size: 13vw;
+    line-height: 20vh;
+    cursor: default;
+}
+
+.slide-1{
+    overflow-y: hidden;
+    overflow-x: auto;
+}
+.slide-1::-webkit-scrollbar{
+    display: none;
+}
+.slide-2 h1{
+    transform: translateX(-100%);
+}
+.slide-2{
+    overflow-y: hidden;
+    overflow-x: auto;
+}
+.slide-2::-webkit-scrollbar{
+    display: none;
+}
+.one-1{
+    font-family: poppins;
+}
+.one-2{
+    font-family: poppins;
+    color: transparent;
+    -webkit-text-stroke: 2px black; 
+}
+
+#page7{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    padding-top: 15vh;
+}
+
+#text-page-7{
+    width: 100vw;
+    height: 50vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#page7 h1{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-weight: 600;
+    width: 60vw;
+    font-size: 4vw;
+    line-height: 1;
+    transform: rotateX(270deg);
+
+}
+
+#page7 h1 span{
+    font-family: Dancing Script;
+}
+
+#qna {
+    height: 40vh;
+    width: 100vw;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+#qna #yes {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 100%;
+    width: 30%;
+}
+
+#qna #yes img{
+    width: 17vw;
+    border-radius: 1vw;
+    position: absolute;
+    opacity: 0;
+    transition: opacity ease 0.4s;
+    transform: rotate(12deg);
+    cursor: none;
+}
+
+#qna #no{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 100%;
+    width: 30%;
+    font-size: 3vw;
+    
+}
+#qna h2{
+    font-size: 3vw;
+    z-index: 999;
+}
+#qna #no img{
+    cursor: none;
+    width: 17vw;
+    height: 17vw;
+    border-radius: 1vw;
+    position: absolute;
+    transition: opacity ease-in 0.5s;
+    transform: rotate(12deg);
+    opacity: 0;
+    box-shadow: 0 4px 7px rgba(0, 0, 0, .1);
+}
+#page8{
+    height: 50vh;
+    width: 100vw;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#page8>h1{
+    font-size: 8vw;
+    padding-bottom: 10vw;
+}
+
+
+#products{
+    height: 40vh;
+    width: 100vw;
+    gap: 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+#product1{
+    margin-left: -70px;
+    transition: all ease 0.5s;
+    z-index: 1;
+}
+#product1:hover{
+    margin-right: 10px;
+    rotate: 12deg;
+    scale: 1.1;
+    padding-bottom: 5vw;    
+}
+#product2{
+    z-index: 2;
+    margin-left: -70px;
+    transition: all 0.5s ease;
+}
+#product2:hover{
+    margin-left: 10px;
+    rotate: 12deg;
+    scale: 1.1;
+    padding-bottom: 5vw;
+}
+#product3{
+    z-index: 999;
+    margin-left: -70px;
+    transition: all 0.5s ease;
+}
+#product3:hover{
+    margin-left: 10px;
+    rotate: 12deg;
+    scale: 1.1;
+    z-index: 999;
+    padding-bottom: 5vw;
+}
+#product4{
+    margin-left: -70px;
+    transition: all 0.5s ease;
+    z-index: 1;
+}
+#product4:hover{
+    margin-left: 10px;
+    rotate: 12deg;
+    scale: 1.1;
+    padding-bottom: 5vw;
+}
+#product5{
+    z-index: 0;
+    margin-left: -70px;
+    transition: all 0.5s ease;
+}
+#product5:hover{
+    margin-left: 10px;
+    rotate: 12deg;
+    scale: 1.1;
+    padding-bottom: 5vw;
+}
+#page8 img{
+    height: 28vw;
+}
