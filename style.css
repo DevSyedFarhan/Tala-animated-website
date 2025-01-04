@@ -50,10 +50,10 @@ body{
 }
 #nav{
     margin-top: 1vh;
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.541);
     border-radius: 10px;
     backdrop-filter: blur(15px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.555);
     height: 50px;
     width: 100%;
     display: flex;
@@ -364,6 +364,7 @@ body{
     transition: opacity ease 0.4s;
     transform: rotate(12deg);
     cursor: none;
+    box-shadow: 0 4px 7px rgba(0, 0, 0, .1);
 }
 
 #qna #no{
